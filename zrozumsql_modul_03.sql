@@ -2,8 +2,6 @@ CREATE DATABASE test
 	WITH ENCODING 'UTF8'
 	TEMPLATE = template0
 	
-	
-	
 CREATE SCHEMA training
 
 CREATE TABLE test_tbl (id int)
