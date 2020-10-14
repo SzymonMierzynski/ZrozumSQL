@@ -1,11 +1,17 @@
---zrozumsql projekt cz1 2020.10.08
+--zrozumsql projekt
+
+--czesc 1
+--Modu³ 3 Data Definition Language – PROJEKT
+
+--------------------------------------------------------------------------------------------------------------------------
 
 --1. Utwórz nowy schemat a jeœli istnieje do usuñ
 --DROP SCHEMA IF EXISTS expense_tracker CASCADE; 
 
 CREATE SCHEMA IF NOT EXISTS expense_tracker;
 
----------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+
 
 --utwórz tabelê bank_account_owner a jeœli istnienie usuñ
 -----CREATE TABLE IF NOT EXISTS EXPENSE_TRACKER.bank_account_owner
@@ -225,3 +231,4 @@ CREATE TABLE expense_tracker.users
 	insert_date timestamp DEFAULT current_timestamp,
 	update_date timestamp DEFAULT current_timestamp
 );
+
