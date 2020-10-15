@@ -59,8 +59,7 @@ CREATE SCHEMA expense_tracker AUTHORIZATION expense_tracker_group;
 
 GRANT CONNECT ON DATABASE postgres TO expense_tracker_group;
 GRANT USAGE, CREATE ON SCHEMA expense_tracker TO expense_tracker_group;
-GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA expense_tracker TO expense_tracker_group;
-
+GRANT ALL PRIVILEGES ON SCHEMA expense_tracker TO expense_tracker_group;
 -----------------------------------
 
 --7. Dodaj rolê expense_tracker_group u¿ytkownikowi expense_tracker_user.
