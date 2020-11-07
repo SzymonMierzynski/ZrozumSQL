@@ -180,71 +180,71 @@ CREATE TABLE expense_tracker.transactions
 --2. Dla ka¿dej z tabel projektowych wstaw przynajmniej 1 rzeczywisty rekord spe³niaj¹cy kryteria tabeli i kluczy obcych.
 
 
-INSERT INTO EXPENSE_TRACKER.BANK_ACCOUNT_OWNER (owner_name,  owner_desc, user_login)
-	VALUES 	('Jan Pierwszy', 'Jan Jacek Pierwszy PESEL 10101010101', '11111'),
-			('Anna Pierwsza', 'Anna Pierwsza nr buta 38', '11112');
+--INSERT INTO EXPENSE_TRACKER.BANK_ACCOUNT_OWNER (owner_name,  owner_desc, user_login)
+--	VALUES 	('Jan Pierwszy', 'Jan Jacek Pierwszy PESEL 10101010101', '11111'),
+--			('Anna Pierwsza', 'Anna Pierwsza nr buta 38', '11112');
 
 --SELECT * FROM EXPENSE_TRACKER.BANK_ACCOUNT_OWNER;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.USERS (user_login, user_name, user_password, password_salt)
-	VALUES 	('11111', 'piejan', 'haslo_jan', 'alt_haslo_jan'),
-			('11112', 'pieann', 'haslo_anna', 'alt_haslo_anna');
+--INSERT INTO EXPENSE_TRACKER.USERS (user_login, user_name, user_password, password_salt)
+--	VALUES 	('11111', 'piejan', 'haslo_jan', 'alt_haslo_jan'),
+--			('11112', 'pieann', 'haslo_anna', 'alt_haslo_anna');
 
 --SELECT * FROM EXPENSE_TRACKER.USERS;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.BANK_ACCOUNT_TYPES (ba_type, ba_desc, id_ba_own) 
-	VALUES ('konto glowne', 'konto glowne Jan Pierwszy', 1);
+--INSERT INTO EXPENSE_TRACKER.BANK_ACCOUNT_TYPES (ba_type, ba_desc, id_ba_own) 
+--	VALUES ('konto glowne', 'konto glowne Jan Pierwszy', 1);
 
 --SELECT * FROM EXPENSE_TRACKER.BANK_ACCOUNT_TYPES;
 	
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.TRANSACTION_CATEGORY (category_name, category_description) 
-	VALUES 	('rachunki', 'oplaty za mieszkanie, energie, gaz, telefon, internet itp'),
-			('odziez', 'wydatki na odziez'),
-			('spozywcze', 'wydatki na jedzenie');
+--INSERT INTO EXPENSE_TRACKER.TRANSACTION_CATEGORY (category_name, category_description) 
+--	VALUES 	('rachunki', 'oplaty za mieszkanie, energie, gaz, telefon, internet itp'),
+--			('odziez', 'wydatki na odziez'),
+--			('spozywcze', 'wydatki na jedzenie');
 
 --SELECT * FROM EXPENSE_TRACKER.TRANSACTION_CATEGORY;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.TRANSACTION_SUBCATEGORY (id_trans_cat, subcategory_name, subcategory_description)
-	VALUES 	(1, 'mieszkanie', 'oplaty za czynsz, podatek od gruntow itp'),
-			(1, 'energia', 'oplaty za zuzycie energii'),
-			(1, 'gaz', 'oplaty za zuzycie gazu'),
-			(1, 'internet', 'oplaty za internet'),
-			(1, 'telefon', 'oplaty za telefony'),
-			(3, 'jedzenie w domu', 'jedzenie zakupione'),
-			(3, 'jedzenie na zewnatrz', 'jedzenie w restauracjach itp');
+--INSERT INTO EXPENSE_TRACKER.TRANSACTION_SUBCATEGORY (id_trans_cat, subcategory_name, subcategory_description)
+--	VALUES 	(1, 'mieszkanie', 'oplaty za czynsz, podatek od gruntow itp'),
+--			(1, 'energia', 'oplaty za zuzycie energii'),
+--			(1, 'gaz', 'oplaty za zuzycie gazu'),
+--			(1, 'internet', 'oplaty za internet'),
+--			(1, 'telefon', 'oplaty za telefony'),
+--			(3, 'jedzenie w domu', 'jedzenie zakupione'),
+--			(3, 'jedzenie na zewnatrz', 'jedzenie w restauracjach itp');
 		
 --SELECT * FROM EXPENSE_TRACKER.TRANSACTION_SUBCATEGORY;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.TRANSACTION_BANK_ACCOUNTS (id_ba_own, id_ba_typ, bank_account_name, bank_account_desc)
-	VALUES 	(1, 1, 'mbank', 'konto w mbank');
+--INSERT INTO EXPENSE_TRACKER.TRANSACTION_BANK_ACCOUNTS (id_ba_own, id_ba_typ, bank_account_name, bank_account_desc)
+--	VALUES 	(1, 1, 'mbank', 'konto w mbank');
 
 --SELECT * FROM EXPENSE_TRACKER.TRANSACTION_BANK_ACCOUNTS;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.TRANSACTION_TYPE (transaction_type_name, transaction_type_desc)
-	VALUES 	('karta debetowa', 'platnosc karta debetowa'),
-			('karta kredytowa', 'platnosc karta kredytowa'),
-			('przelew', 'platnosc przelewem');
+--INSERT INTO EXPENSE_TRACKER.TRANSACTION_TYPE (transaction_type_name, transaction_type_desc)
+--	VALUES 	('karta debetowa', 'platnosc karta debetowa'),
+--			('karta kredytowa', 'platnosc karta kredytowa'),
+--			('przelew', 'platnosc przelewem');
 
 --SELECT * FROM EXPENSE_TRACKER.TRANSACTION_TYPE;
 
 --------------------------------------
 
-INSERT INTO EXPENSE_TRACKER.TRANSACTIONS (id_trans_ba, id_trans_cat, id_trans_subcat, id_trans_type, id_user, transaction_date, transaction_value, transaction_description)
-	VALUES 	(1, 1, 4, 3, 1, '2020.07.01', 99.99, 'rachunek za internet 2020/07'),
-			(1, 3, 6, 1, 2, '2020.07.07', 12.74, 'poranne zakupy na sniadanie'),
-			(1, 3, 7, 1, 1, '2020.07.08', 254.00, 'kolacja w restauracji');
+--INSERT INTO EXPENSE_TRACKER.TRANSACTIONS (id_trans_ba, id_trans_cat, id_trans_subcat, id_trans_type, id_user, transaction_date, transaction_value, transaction_description)
+--	VALUES 	(1, 1, 4, 3, 1, '2020.07.01', 99.99, 'rachunek za internet 2020/07'),
+--			(1, 3, 6, 1, 2, '2020.07.07', 12.74, 'poranne zakupy na sniadanie'),
+--			(1, 3, 7, 1, 1, '2020.07.08', 254.00, 'kolacja w restauracji');
 
 --SELECT * FROM EXPENSE_TRACKER.TRANSACTIONS;
 
